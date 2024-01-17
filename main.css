@@ -10,6 +10,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 24px;
 }
 main {
 	background-color: #15263f;
@@ -18,9 +19,21 @@ main {
 	border-radius: 15px;
 	box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 768px) {
+	main {
+		max-width: 327px;
+		padding-right: 25px;
+		padding-bottom: 24px;
+	}
+}
 main picture {
 	max-width: 302px;
 	position: relative;
+}
+@media screen and (max-width: 768px) {
+	main picture {
+		max-width: 278px;
+	}
 }
 main picture > img {
 	display: block;
@@ -49,16 +62,31 @@ main section h1 {
 	color: #ffffff;
 	margin-bottom: 16px;
 }
+@media screen and (max-width: 768px) {
+	main section h1 {
+		margin-bottom: 12px;
+	}
+}
 main section p {
 	font-size: 18px;
-	line-height: 1.4444;
+	line-height: 1.44445;
 	color: #8bacd9;
 	font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+	main section p {
+		max-width: 278px;
+	}
 }
 main section .card-infos {
 	display: flex;
 	justify-content: space-between;
 	margin: 24px 0;
+}
+@media screen and (max-width: 768px) {
+	main section .card-infos {
+		margin: 16px 0;
+	}
 }
 main section .card-infos .eth {
 	display: flex;
@@ -82,6 +110,13 @@ main section .card-infos .clock span {
 	color: #8bacd9;
 	font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+	main section .card-infos .eth span,
+	main section .card-infos .clock span {
+		font-size: 15px;
+		line-height: 1.2667;
+	}
+}
 .line {
 	height: 1px;
 	background-color: #2e405a;
@@ -100,6 +135,12 @@ main footer img {
 main footer p {
 	color: #8bacd9;
 	line-height: 1.25;
+}
+@media screen and (max-width: 768px) {
+	main footer p {
+		font-size: 15px;
+		line-height: 1.2667;
+	}
 }
 main footer p span {
 	color: #ffffff;
